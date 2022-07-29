@@ -23,28 +23,25 @@ var highScores =
 
 function ask(question, answer) {
   var userAnswer = readlineSync.question(question + "\n");
-  if (userAnswer === answer) {
-    console.log("Correct!!");
+  if (userAnswer.toLowerCase() === answer.toLowerCase()) {
+    console.log(chalk.greenBright("Correct!!"));
     currentScore++;
-    console.log("score: ", currentScore +"\n");
+    console.log("score: ", currentScore + "\n");
   }
   else {
-    console.log("Wrong!!");
-    console.log("score: ", currentScore +"\n");
+    console.log(chalk.red("Wrong!!"));
+    console.log("score: ", currentScore + "\n");
     return;
   }
-  if(currentScore>=4 && currentScore<5)
-     {
+  if (currentScore >= 4 && currentScore < 5) {
     console.log(chalk.redBright("Congrats!! You entered LEVEL 1 of the game!!\n"))
-     }
-  if(currentScore>=7 && currentScore<8)
-     {
+  }
+  if (currentScore >= 7 && currentScore < 8) {
     console.log(chalk.cyanBright("Congrats!! You entered LEVEL 2 of the game!!\n"));
-     }
-  if(currentScore>=9 && currentScore<10)
-     {
+  }
+  if (currentScore >= 9 && currentScore < 10) {
     console.log(chalk.greenBright("Congrats!! You entered LEVEL 3 of the game!! Yippeee  ;)\n  "))
-     }
+  }
 }
 
 
@@ -78,7 +75,7 @@ var questions =
     },
     {
       question: "How many sides does a quadrilateral have? ",
-      answer: "4"
+      answer: "4";
     },
     {
       question: "Which Indian Cricketer did hit six sixes in six balls against England in 2007? ",
@@ -112,18 +109,17 @@ for (var i = 0; i < questions.length; i++) {
 
 console.log(chalk.bgYellowBright("\nYour final score is : ", currentScore + "  \n"));
 
-  if (currentScore >= highScores.azhar) {
+if (currentScore >= highScores.azhar) {
   console.log(chalk.bgBlackBright("Congratulations!! You are the new highest scorer!! Kindly send the screenshot of the score to us. \nThank You  \n\n"));
-  
-  console.log(chalk.bgBlue("High Scores :- \n" + userName+": " + currentScore +  " \nAzhar : " + highScores.azhar + " \nBhargav : " + highScores.bhargav + " "));
-  }
-    
-  else 
-  {
+
+  console.log(chalk.bgBlue("High Scores :- \n" + userName + ": " + currentScore + " \nAzhar : " + highScores.azhar + " \nBhargav : " + highScores.bhargav + " "));
+}
+
+else {
   console.log(chalk.bgRed("Oops!! You failed to beat the highest scorer!!\nBetter Luck Next Time  \n\n"));
-    
+
   console.log(chalk.bgBlue("High Scores :- \n" + "Azhar : " + highScores.azhar + " \nBhargav : " + highScores.bhargav + " "));
-  }
-  
+}
+
 
 

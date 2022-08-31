@@ -3,7 +3,7 @@
 // npm i chalk@4.1.2  //use it in the shell
 var chalk = require('chalk');
 
-console.log(chalk.blue('General Knowledge Quiz App\n\n'));
+console.log(chalk.blue('markTwo General Knowledge Quiz App\n\n'));
 
 var readlineSync = require('readline-sync');
 

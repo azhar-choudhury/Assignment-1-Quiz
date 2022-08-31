@@ -3,13 +3,13 @@
 // npm i chalk@4.1.2  //use it in the shell
 var chalk = require('chalk');
 
-// console.log(chalk.blue('Hello world!'));
+console.log(chalk.blue('General Knowledge Quiz App\n\n'));
 
 var readlineSync = require('readline-sync');
 
-var userName = readlineSync.question("May we know your name please? ");
+var userName = readlineSync.question("May we know your name please? \n");
 
-console.log(chalk.blue("Hello " + userName + " to the neog.camp fun quiz game!!\n"));
+console.log(chalk.blue("\nHello " + userName + " to the neog.camp fun quiz game!!\n"));
 
 console.log(chalk.bgGreen("Please answer 4 questions correctly to reach Level 1 of the game,7 to reach Level 2 of the game, and 9 to reach Level 3 of the game.\nALL THE BEST :) \n\n"));
 
@@ -44,17 +44,6 @@ function ask(question, answer) {
   }
 }
 
-
-// var questionOne = {
-//   question: "Who is my favorite superhero? ",
-//   answer: "Dhruv"
-// }
-
-// var questionTwo = {
-//   question: "Which is my favorite sad song? ",
-//   answer: "Channa Mereya"
-// }
-
 var questions =
   [
     {
@@ -75,7 +64,7 @@ var questions =
     },
     {
       question: "How many sides does a quadrilateral have? ",
-      answer: "4";
+      answer: "4"
     },
     {
       question: "Which Indian Cricketer did hit six sixes in six balls against England in 2007? ",

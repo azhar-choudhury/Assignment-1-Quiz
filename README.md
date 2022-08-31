@@ -4,9 +4,9 @@ This is a General Knowledge Quiz program made for fun. Students can play this Qu
 
 Hope you would like the program. 
 
-Thank You :)
+Thank You 😇
 
 Here is a demo of the app 👇🏻
 
+![markTwo General Knowledge Quiz App Demo](./markTwoDemo.png)
 
-![General Knowledge Quiz App](Screenshot%202022-08-31%20at%2010.03.15%20PM.png)

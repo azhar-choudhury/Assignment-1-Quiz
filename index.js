@@ -60,7 +60,7 @@ var questions =
     },
     {
       question: "Which is the largest country in Asia? ",
-      answer: "China"
+      answer: "Russia"
     },
     {
       question: "How many sides does a quadrilateral have? ",
